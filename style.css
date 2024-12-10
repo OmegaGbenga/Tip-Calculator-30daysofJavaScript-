@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient( 45deg,  purple 45%, plum 30%,  violet 10%, indigo 15%);
+    display: grid;
+    place-content: center;
+    place-items: center;
+    user-select: none;
+}
+
+.container{
+    width: 300px;
+    height: 400px;
+    background-color: plum;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 8px 5px 5px rgba(19, 19, 19, 0.632);
+    
+  
+
+}
+h2{
+    font-family: "poppins", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color:whitesmoke;
+    text-shadow: 3px 5px 5px black;
+
+}
+p{
+    font-family: "poppins", sans-serif;
+    font-size: 8px;
+    text-align: center;
+    color:whitesmoke;
+    text-shadow: 3px 5px 5px black;
+}
+.calculator{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "poppins", sans-serif;
+    font-size: 15px;
+    color: rgb(53, 62, 53);
+    font-weight: 500;
+    
+    padding: 10px;
+    margin-top: 30px;
+}
+input{
+    height: 35px;
+    width: 200px;
+    border-radius: 2px;
+    border: none;
+    padding: 10px;   
+    margin-top: 5px;
+   
+}
+input:focus{
+    
+    outline: none;
+}
+
+button{
+    background-color: purple;
+    border: none;
+    color: white;
+    height: 40px;
+    width: 120px;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: "roboto" , sans-serif;
+    cursor: pointer;
+}
+#total{
+    font-size: 20px;
+    color: #333;
+    font-family: "roboto", sans-serif;
+    margin-top: 15px;
+    font-weight: bold;
+
+
+}
+#total.changed{
+    color: aqua;
+    transform: scale(1.1);
+
+}
+
